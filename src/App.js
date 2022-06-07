@@ -9,9 +9,16 @@ function App() {
     setCount(count + num)
   }
   return (
-    <><div className="App">
-      <Button num={1} whenClicked={incrementer} />
-    </div><span>{count}</span></>
+    <>
+      <div className="App">
+        <Button num={1} whenClicked={incrementer} />
+        <Button num={10} whenClicked={incrementer} />
+        <Button num={100} whenClicked={incrementer} />
+        <Button num={1000} whenClicked={incrementer} />
+        <Button num={0.1} whenClicked={incrementer} />
+      </div>
+      <span>{count}</span>
+    </>
   );
 }
 
